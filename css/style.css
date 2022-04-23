@@ -1,0 +1,70 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+input{
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    border: none;
+    margin: 4px 0px;
+    height: 40px;
+    color: black;
+    background-color: rgb(211, 208, 208);
+}
+
+input:focus{
+    background-color: white;
+}
+
+.calc-price input{
+    width: 21%;
+}
+
+button{
+    width: 100%;
+    background-color: rgb(42, 157, 165);
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    margin: 4px 0;
+    cursor: pointer;
+}
+
+.btnSearch > button{
+    width: 40% !important;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+table  tr  th{
+    background-color: rgb(30, 159, 163);
+    padding: 10px 15px;
+    border-radius: 4px;
+    position: relative;
+    letter-spacing: .5px;
+}
+
+
+table  tr th::before{
+    content: "";
+    position: absolute;
+    border: 5px solid;
+    border-color: rgb(30, 159, 163) transparent transparent transparent;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+tbody tr td{
+    border-bottom: 1px solid  rgb(30, 159, 163);
+}

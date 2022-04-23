@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Products</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- <script src="js/dom.js"></script> -->
+    
+
+    <div class="container">
+        <div class="head">
+            <!-- <h3>Cruds</h3> -->
+            <p>Product Mananement System</p>
+        </div>
+
+        <div class="inputs">
+        <form>
+            <input id="title" type="text" placeholder="Title Product" maxlength="30">
+        <div class="calc-price">
+                <input maxlength="3" onkeyup="getTotla()" id="price" type="number" placeholder="Price">
+                <input maxlength="2" onkeyup="getTotla()" id="ads" type="number" placeholder="Ads">
+                <input maxlength="2" onkeyup="getTotla()" id="pre" type="number" placeholder="pre">
+                <input maxlength="2" onkeyup="getTotla()" id="discount" type="number" placeholder="discount">
+                <span id="total-price">Totel :</span>
+        </div>
+
+            <input type="number" id="count" placeholder="Product Count">
+            <input type="text" placeholder="Category" id="category">
+            <button id="create">Create</button>
+        </form>
+    </div>
+
+    <div class="outputs">
+        <div class="search-content">
+            <input onkeyup="searchAboutData(this.value)" type="text" id="search" placeholder="Search">
+            <div class="btnSearch">
+                <button onclick="getSearchMood(this.id)" class="search" id="searchTitle">Search By Title</button>
+                <button onclick="getSearchMood(this.id)" class="search" id="searchCategory">Search By Category</button>
+            </div>
+        </div>
+        <div id="deleteAllPro"></div>
+
+        <table>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>totla</th>
+                <th>Category</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+    </div>
+
+    </div>
+
+
+    <script src="js/style.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
