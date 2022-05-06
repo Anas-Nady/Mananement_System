@@ -1,57 +1,6 @@
 
 
 
-// // Start Localstorage
-
-// localStorage.setItem('number',JSON.stringify([18])) // Convert object To String
-// localStorage.setItem('age',JSON.stringify(30)) // Convert Numer To String
-
-// localStorage.user = JSON.stringify({ // Convert object To String
-//     name: 'Anas Abdallah',
-//     country: 'Egypt'
-// })
-
-
-
-// console.log(typeof localStorage.getItem('user')) // String 
-// console.log(typeof localStorage.getItem('number')) // String
-
-
-// console.log(typeof JSON.parse(localStorage.getItem('number'))); // Object
-// console.log(typeof JSON.parse(localStorage.getItem('age'))); // Number
-
-// localStorage.removeItem('age') // Delete one item from localstorge
-// localStorage.clear() // Delete All item in localstorge
-
-// // Storge value input 
-
-// // let text = document.getElementById('input-text')
-
-// // if (localStorage.length > 0) {
-// //      text.value = localStorage.getItem('text')
-// // }
-
-// // text.onkeyup = function() {
-// //     localStorage.setItem('Name-user', text.value)
-// // }
-
-// // background-color body 
-
-// let red = document.getElementById('red')
-// let blue = document.getElementById('blue')
-// let brown = document.getElementById('brown')
-// let black = document.getElementById('black')
-
-// if (localStorage.length > 0) {
-//     document.body.style.backgroundColor = localStorage.backgroundColorBody
-// }
-
-// function setColor (color){
-//     document.body.style.backgroundColor = color
-//     localStorage.setItem('backgroundColorBody', color)
-// }
-
-
 let title = document.getElementById('title')
 let price = document.getElementById('price')
 let ads = document.getElementById('ads')
@@ -149,7 +98,7 @@ function showData() {
     for(let i = 0; i < dataPro.length; i++) {
         table += `
         <tr>
-        <td>${i}</td>
+        <td>${i + 1}</td>
         <td>${dataPro[i].title}</td>
         <td>${dataPro[i].price}</td>
         <td>${dataPro[i].ads}</td>
